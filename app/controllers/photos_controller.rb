@@ -9,6 +9,7 @@ class PhotosController < ApplicationController
     @photo = Photo.new
   end
   
+  # POST /photos.xml
   def create
     if @user = User.twitter_auth(params[:username], params[:password])
       
