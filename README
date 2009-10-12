@@ -1,3 +1,6 @@
+For use with Tweetie 2 and its new custom image service
+http://developer.atebits.com/tweetie-iphone/custom-image
+
 I currently have this running for my own personal use and I don't really
 have any plans to make a public service out of it unless I get a lot
 of interest in doing so. So the next best thing I thought to do would
@@ -22,7 +25,7 @@ Get your token and store it against the user record
 Set a secret session key for Rails in config/secret
 - use `rake secret` to get a new key
 
-POST to https://example.com/photos.xml
+POST to https://your-domain.com/photos.xml
 
 Tweetie will send
 :username
