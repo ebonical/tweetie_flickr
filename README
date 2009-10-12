@@ -11,7 +11,7 @@ Put these into config/flickr.yml
 Authenticate your Flickr account for write access
 Get your token and store it against the user record
 
-Set a secret session key for Rails in RAILS_ROOT/secret
+Set a secret session key for Rails in config/secret
 - use `rake secret` to get a new key
 
 POST to https://example.com/photos.xml
@@ -25,4 +25,4 @@ Tweetie will send
 ==========
 TODO:
 [ ] Automate account creation and Flickr authentication
-[ ] 
+[ ] Some real tests with mock webservice calls

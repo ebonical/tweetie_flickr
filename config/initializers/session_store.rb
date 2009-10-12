@@ -6,7 +6,7 @@
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
   :key         => '_tweetie_flickr_session',
-  :secret      => File.read(File.join(RAILS_ROOT, 'secret')).strip
+  :secret      => File.read(File.join(RAILS_ROOT, 'config/secret')).strip
 }
 
 # Use the database for sessions instead of the cookie-based default,
