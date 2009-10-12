@@ -1,0 +1,24 @@
+<% form_for @photo, :html => { :multipart => true } do |f| -%>
+  <%= f.error_messages %>
+  <% field_set_tag "Twitter" do %>
+    <div class="text field required">
+      <%= label_tag :username, "Username" %>
+      <%= text_field_tag :username %>
+    </div>
+    <div class="password field required">
+      <%= label_tag :password, "Password" %>
+      <%= password_field_tag :password %>
+    </div>
+  <% end -%>
+  <% field_set_tag do %>
+    <div class="file field">
+      <%= f.label :image, "Image file" %>
+      <%= f.file_field :image %>
+    </div>
+  <% end -%>
+  <% field_set_tag do %>
+    <div class="submit field">
+      <%= f.submit "Save", :disable_with => "Saving..." %>
+    </div>
+  <% end -%>
+<% end -%>

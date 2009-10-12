@@ -1,0 +1,20 @@
+# == Schema Information
+#
+# Table name: photos
+#
+#  id                :integer         not null, primary key
+#  flickr_id         :string(255)
+#  created_at        :datetime
+#  updated_at        :datetime
+#  user_id           :integer
+#  twitter_status_id :string(255)
+#  caption           :string(255)
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+# one:
+#   column: value
+#
+# two:
+#   column: value

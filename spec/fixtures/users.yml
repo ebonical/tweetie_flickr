@@ -1,0 +1,25 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id               :integer         not null, primary key
+#  twitter_username :string(255)
+#  twitter_password :string(255)
+#  flickr_user_id   :string(255)
+#  flickr_token     :string(255)
+#  test_user        :boolean
+#  created_at       :datetime
+#  updated_at       :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  twitter_username: MyString
+  twitter_password: MyString
+  flickr_token: MyString
+
+two:
+  twitter_username: MyString
+  twitter_password: MyString
+  flickr_token: MyString

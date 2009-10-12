@@ -1,0 +1,12 @@
+<p><%= link_to "New photo", new_photo_path %></p>
+
+<% if !@photos.blank? %>
+  <% for photo in @photos %>
+    <% div_for photo do %>
+      <p><em>Short URL</em> <%= link_to photo.short_url, photo.short_url %></p>
+      <p><em>Caption</em> <%= h(photo.caption) %></p>
+    <% end -%>
+  <% end %>
+<% else %>
+  <p>None</p>
+<% end %>
