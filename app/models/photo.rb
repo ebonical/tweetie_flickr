@@ -95,7 +95,7 @@ class Photo < ActiveRecord::Base
       description = caption.to_s
       description += "\n\nTwitter: #{tweet_url}" if tweet_url
       flickr_image.set_meta(:description => description)
-      flickr_image.set_tags(tags.join(',')) unless tags.empty?
+      flickr_image.add_tags(tags.join(',')) unless tags.empty?
     end
   end
 end
